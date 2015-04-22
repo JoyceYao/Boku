@@ -21,7 +21,7 @@ angular.module('myApp').service('hexagon', function($window) {
     this.drawHexGrid = function (hor, originX, originY, isDebug, board) {
         hex.context.clearRect(0,0,hex.canvas.width, hex.canvas.height);
         //hex.context.rotate(0.5);
-        //hex.context.rotate(10*Math.PI/180);
+        //hex.context.rotate(-30*Math.PI/180);
         hex.canvasOriginX = originX;
         hex.canvasOriginY = originY;
         
@@ -34,8 +34,11 @@ angular.module('myApp').service('hexagon', function($window) {
         for (var col = 0; col < 12; col++) {
             for (var row = 0; row < 12; row++) {
                 var x = parseInt((5-col+2*row)/2, 10);
+
                 if(5-col+2*row<0) x = 1000;
+                console.log("x"+x);
                 var y = x + col - 5;
+                console.log("y"+y);
                 if (!offsetColumn) {
                     currentHexX = (col * hex.side) + originX;
                     currentHexY = (row * hex.height) + originY;
