@@ -8,8 +8,12 @@
   <title>Boku</title>
   <meta name="description" content="Boku game">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-touch.min.js"></script>
+    <!-- build:js http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.js"></script>
+    <!-- /build -->
+    <!-- build:js http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-touch.min.js -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-touch.js"></script>
+    <!-- /build -->
 
     <!-- build:js dist/everything.min.js -->
   <script src="game.js"></script>
@@ -17,20 +21,23 @@
   <script src="gameLogic.js"></script>
     <!-- /build -->
 
+    <!-- build:js http://yoav-zibin.github.io/emulator/dist/dragAndDropListeners.min.js -->
+    <script src="http://yoav-zibin.github.io/emulator/examples/drag_n_drop/dragAndDropListeners.js"></script>
+    <!-- /build -->
+
     <!-- build:js http://yoav-zibin.github.io/emulator/dist/gameServices.min.js -->
     <script src="http://yoav-zibin.github.io/emulator/resizeGameAreaService.js"></script>
   <script src="http://yoav-zibin.github.io/emulator/gameService.js"></script>
   <script src="http://yoav-zibin.github.io/emulator/messageService.js"></script>
-  <script src="scaleBodyService.js"></script>
   <script src="http://yoav-zibin.github.io/emulator/stateService.js"></script>
     <!-- /build -->
-    <!--link rel="stylesheet" type="text/css" href="http://yoav-zibin.github.io/emulator/main.css">-->
+
+    <link rel="stylesheet" type="text/css" href="http://yoav-zibin.github.io/emulator/main.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body ng-controller="Ctrl as ctrl">
-<div id="gameArea">
-      <!--<img ng-src = "Board.gif" position="absolute" width = "100%" height = "100%">-->
-  <canvas id="HexCanvas"  width="1000" height="1100" ng-click="cellClicked($event);"></canvas>
+<div id="gameArea" >
+    <canvas id="HexCanvas"  width="1000" height = "1000" ng-click="cellClicked($event);"></canvas>
 </div>
 </body>
 </html>

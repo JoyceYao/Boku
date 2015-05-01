@@ -46,6 +46,7 @@ var verIndex = [[0, 6], [0, 7], [0, 8], [0, 9], [0, 10],
 // starting point from NW side, end at row==10 or col==9
 var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
   [2, 0], [3, 0], [4, 0], [5, 0]];
+    var gameOver = false;
 
 /*jslvar devel: true, indent: 2 */
 /*global console */
@@ -60,7 +61,9 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
   }
 
   /** Return the winner (either 'R' or 'Y') or '' if there is no winner. */
+  //var gamehasnotended;
   function getWinner(board) {
+      //gamehasnotended = false;
     //check left to right
     var i, cnt, j;
     for(i=0; i<11; ++i) {
@@ -115,6 +118,7 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
         }
       }
     }
+      //gamehasnotended = true;
     return '';
   }//Done
   function isInsideBoard(row,col) {
@@ -138,6 +142,7 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
    * Returns the move that should be performed when player 
    * with index turnIndexBeforeMove makes a move in cell row X col. 
    */
+
   function createMove(board, row, col, delDirRow, delDirCol, delDis, turnIndexBeforeMove) {
     if(board === undefined) board = setBoard();
     if (board[row][col] !== '') {
@@ -155,6 +160,8 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
     var firstOperation;
     if (winner !== '' || isTie(boardAfterMove)) {
       // Game over.
+        console.log("Game over");
+        gameOver = true;
       firstOperation = {endMatch: {endMatchScores: 
         (winner === 'R' ? [1, 0] : (winner === 'Y' ? [0, 1] : [0, 0]))}};
     } else {

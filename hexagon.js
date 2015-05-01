@@ -19,7 +19,7 @@ angular.module('myApp').service('hexagon', function($window) {
     };
 
     this.drawHexGrid = function (hor, originX, originY, isDebug, board) {
-        hex.context.clearRect(0,0,hex.canvas.width, hex.canvas.height);
+        //hex.context.clearRect(0,0,hex.canvas.width, hex.canvas.height);
         //hex.context.rotate(0.5);
         //hex.context.rotate(-30*Math.PI/180);
         hex.canvasOriginX = originX;
@@ -36,9 +36,9 @@ angular.module('myApp').service('hexagon', function($window) {
                 var x = parseInt((5-col+2*row)/2, 10);
 
                 if(5-col+2*row<0) x = 1000;
-                console.log("x"+x);
+                //console.log("x"+x);
                 var y = x + col - 5;
-                console.log("y"+y);
+                //console.log("y"+y);
                 if (!offsetColumn) {
                     currentHexX = (col * hex.side) + originX;
                     currentHexY = (row * hex.height) + originY;
@@ -57,10 +57,11 @@ angular.module('myApp').service('hexagon', function($window) {
                     }
                         //hex.drawHex(currentHexX, currentHexY, "#888", debugText);
                     else if(board[x][y] == 'R')
-                        hex.drawHex(currentHexX, currentHexY, "#f00", debugText);
+                        hex.drawHex(currentHexX, currentHexY, "#000000", debugText);
                     else if (board[x][y] == 'Y')
-                        hex.drawHex(currentHexX, currentHexY, "#ff0", debugText);
+                        hex.drawHex(currentHexX, currentHexY, "#FFFFFF", debugText);
                     else if( board[x][y] == '')
+                        //hex.drawHex(currentHexX, currentHexY, "#999999", debugText);
                         hex.drawHex(currentHexX, currentHexY, "#999999", debugText);
                 }
             }
