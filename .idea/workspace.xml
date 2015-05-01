@@ -4764,7 +4764,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/fileset/node_modules/glob/examples/g.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/glob/examples/g.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/examples/g.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/gaze/lib/gaze.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json" />
@@ -9916,7 +9915,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430455394983</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1. removed scaleBodyService, 2. added drag-n-drop, 3. updated UI, 4. added appcache">
+      <created>1430455564228</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1430455564228</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
