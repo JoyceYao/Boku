@@ -9601,6 +9601,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/glob/test/zz-cleanup.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/test/zz-cleanup.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/ecstatic/test/public/中文/檔案.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.appcache" afterPath="$PROJECT_DIR$/game.appcache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Boku.iws" />
@@ -9648,8 +9649,8 @@
       <file leaf-file-name="game.min.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.min.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5828221" vertical-offset="0" max-vertical-offset="525">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.030674847" vertical-offset="0" max-vertical-offset="525">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -9730,10 +9731,10 @@
         <option value="$PROJECT_DIR$/game.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/protractor.conf.js" />
-        <option value="$PROJECT_DIR$/game.min.html" />
         <option value="$PROJECT_DIR$/game.appcache" />
         <option value="$PROJECT_DIR$/game.html" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/game.min.html" />
       </list>
     </option>
   </component>
@@ -10298,8 +10299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.min.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5828221" vertical-offset="0" max-vertical-offset="525">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.030674847" vertical-offset="0" max-vertical-offset="525">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
