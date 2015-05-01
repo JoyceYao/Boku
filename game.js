@@ -1,6 +1,7 @@
 'use strict';
 // TODO: remove stateService before launching the game.
-angular.module('myApp',['ngTouch']).controller('Ctrl', function (
+angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$log','$timeout',
+    'gameService', 'gameLogic', 'hexagon', 'resizeGameAreaService', function (
       $window, $scope, $log,$timeout,
       gameService, gameLogic, hexagon, resizeGameAreaService) {
     //setting up canvas
@@ -29,7 +30,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl', function (
       }
       hexagon.drawHexGrid(gameLogic.horIndex, 30, 30, false, $scope.board);
 
-        console.log("board" + board);
+        console.log("board" + $scope.board);
       
       $scope.isYourTurn = params.turnIndexAfterMove >= 0 && // game is ongoing
         params.yourPlayerIndex === params.turnIndexAfterMove; // it's my turn
@@ -267,4 +268,4 @@ angular.module('myApp',['ngTouch']).controller('Ctrl', function (
       updateUI: updateUI
     });
 
-  });
+  }]);

@@ -319,7 +319,7 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
     }
 
     // "Manual testing" --- expected result is [true, true, false].
-      board = setBoard();
+      var board = setBoard();
       board[0][0] = 'R';
       var board2 = copyObject(board);
       board2[0][1] = 'Y';   
