@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html manifest="game.appcache" lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Boku</title>
+  <meta name="description" content="Boku game">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-touch.min.js"></script>
+
+    <script src="dist/everything.min.js"></script>
+
+    <script src="http://yoav-zibin.github.io/emulator/dist/dragAndDropListeners.min.js"></script>
+
+    <script src="http://yoav-zibin.github.io/emulator/dist/gameServices.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://yoav-zibin.github.io/emulator/main.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-controller="Ctrl as ctrl">
+<div id="gameArea" >
+    <canvas id="HexCanvas"  width="1000" height = "1000" ng-click="cellClicked($event);"></canvas>
+</div>
+</body>
+</html>
