@@ -275,6 +275,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/test/assets/fast.zip" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/test/assets/fastest.zip" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/lib/public/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/favicon.ico" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/union/examples/simple/favicon.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/union/examples/simple/favicon.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/serve-index/public/icons/film.png" />
@@ -305,7 +306,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/map.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/markerTransparent.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/test/assets/maximum.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_m" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/test/assets/normal.zip" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/js/skins/lightgray/img/object.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/serve-index/public/icons/page.png" />
@@ -703,6 +703,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/tmp/.npmignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/.npmignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/.npmignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jasmine-core/.idea/.rakeTasks" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/.tern-port" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/console-browserify/.testem.json" />
@@ -837,6 +839,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/saucelabs/.travis.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/tmp/.travis.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/.travis.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/braces/node_modules/preserve/.verb.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/object.omit/.verbrc.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/object.omit/node_modules/isobject/.verbrc.md" />
@@ -1002,6 +1005,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/jasminewd2/CHANGELOG.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/CHANGELOG.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/CHANGELOG.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/faye-websocket/CHANGELOG.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/CHANGELOG" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/CHANGELOG" />
@@ -1218,6 +1222,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/optionator/node_modules/fast-levenshtein/LICENSE.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/node_modules/utile/node_modules/ncp/LICENSE.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/node-uuid/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/LICENSE.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/LICENSE.source-map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/findup-sync/node_modules/lodash/LICENSE.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/LICENSE.txt" />
@@ -1564,6 +1569,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/LICENSE" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/LICENSE" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/node_modules/amdefine/LICENSE" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/internal/LazyWrapper.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/internal/LazyWrapper.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/internal/LazyWrapper.js" />
@@ -1597,6 +1604,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/Makefile.dryice.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/Makefile.dryice.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/Makefile.dryice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/Makefile.dryice.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/Makefile" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/qs/Makefile" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/union/node_modules/qs/Makefile" />
@@ -2078,6 +2086,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/README.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/README.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/node_modules/amdefine/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/README.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/http-signature/node_modules/ctype/README.old" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/README.org" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/union/examples/socketio/README" />
@@ -2224,6 +2236,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/optimist/test/_.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/_base.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/_base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/_base_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_duplex.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_duplex.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-protractor-runner/node_modules/through2/node_modules/readable-stream/lib/_stream_duplex.js" />
@@ -2311,20 +2324,34 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/ecstatic/node_modules/minimist/test/all_bool.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/dateformat/node_modules/meow/node_modules/minimist/test/all_bool.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/resolve/test/pathfilter/deep_ref/node_modules/deep/alt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/alt_root_index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/semver/test/amd.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine/amdefine.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/node_modules/amdefine/amdefine.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/node_modules/amdefine/amdefine.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/node_modules/amdefine/amdefine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/node_modules/amdefine/amdefine.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/colors/lib/maps/america.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/colors/lib/maps/america.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/ibrik/node_modules/fileset/tests/fixtures/an (odd) filename.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/fileset/tests/fixtures/an (odd) filename.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.2.9/angular-animate.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.2.9/angular-animate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.3.0-rc0/angular-animate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.2.9/angular-route.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.2.9/angular-route.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.3.0-rc0/angular-route.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/sprintf-js/src/angular-sprintf.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/sprintf-js/dist/angular-sprintf.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/sprintf-js/dist/angular-sprintf.min.map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/sprintf-js/demo/angular.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.2.9/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.2.9/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/lib/angular_v1.3.0-rc0/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/animation/animation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/animation/animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/animation/animation.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/di/lib/annotation.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/collection/any.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/collection/any.js" />
@@ -2337,7 +2364,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/noptify/test/api.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/docs/api.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tough-cookie/test/api_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/components/app-version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/app.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/app.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/append.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/lib/action/append.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/bin/apply" />
@@ -2364,6 +2394,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map/array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map/array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map/array-set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/node_modules/utile/node_modules/i/test/utils/array-test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/array/array.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/array.js" />
@@ -2454,8 +2485,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/assert-shim.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/assert-shim.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/assert-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/assert-shim.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/testing/assert.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/http-signature/node_modules/assert-plus/assert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/testing/assert.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/asserts/asserts.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/testing/asserts.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/webdriver/testing/asserts.js.src.html" />
@@ -2493,6 +2526,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/uglify-js/lib/ast.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/lib/async-callback.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/spec/async-callback_spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/async/async.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/resolve/example/async.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/resolve/lib/async.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/async/lib/async.js" />
@@ -2507,6 +2541,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/node_modules/utile/node_modules/async/lib/async.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/async/lib/async.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/form-data/node_modules/async/lib/async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/async/async.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/testing/asynctestcase.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/testing/asynctestcase.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/collection/at.js" />
@@ -2571,12 +2606,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map/base64-vlq.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map/base64-vlq.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map/base64-vlq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/base64-vlq.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/lib/source-map/base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/lib/source-map/base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map/base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map/base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/node_modules/utile/lib/base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map/base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/base64id/lib/base64id.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/internal/baseAssign.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/internal/baseAssign.js" />
@@ -2942,6 +2979,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map/binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map/binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map/binary-search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/firefox/binary.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/binary.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/lib/js-yaml/type/binary.js" />
@@ -2979,6 +3017,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/binding.Makefile" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/binding.gyp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/src/binding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/bindings/bindings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/bindings/bindings.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/test/assets/attributes_test/blank file.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/blank.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-protractor-runner/test/blankTest.js" />
@@ -3058,6 +3098,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/optimist/node_modules/wordwrap/test/break.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/optimist/node_modules/wordwrap/test/break.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/docs/browser-setup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/browser-source-map-support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/amd-test/browser-source-map-support.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/docs/browser-support.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/labs/useragent/browser.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/minimatch/browser.js" />
@@ -3108,6 +3150,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/multiparty/node_modules/readable-stream/node_modules/isarray/build/build.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/readable-stream/node_modules/isarray/build/build.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/build.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/flash-src/build.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/bin/build" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/test/node/builder.common.js" />
@@ -3245,6 +3288,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/examples/choice.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/chrome.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/chrome.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/timeline/spec/chromelog.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/array/chunk.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/array/chunk.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/array/chunk.js" />
@@ -3603,6 +3647,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/examples/http/concurrent-proxy.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/uglify-js/test/compress/conditionals.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/example/conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/timeline/spec/conf.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/build/config.gypi" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/nan/build/config.gypi" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/config.js" />
@@ -3618,6 +3663,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/lib/configParser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/test/configuration-test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/test/configureNoLevels-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/conflict/conflict.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/conflict/conflict.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/test/connect-logger-test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/lib/connect-logger.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/lib/connect.js" />
@@ -3659,6 +3706,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/lib/middleware/cookieSession.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tough-cookie/test/cookie_jar_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tough-cookie/test/cookie_sorting_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/cookie_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tough-cookie/test/cookie_to_json_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tough-cookie/test/cookie_to_string_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/cookies.html" />
@@ -4155,6 +4203,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/dynamicallyModifiedPage.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/ecstatic/test/public/subdir/e.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/ecstatic/test/public/e.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/timeline/spec/e2e.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/collection/each.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/collection/each.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/collection/each.js" />
@@ -4175,6 +4224,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/.bin/ecstatic" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/domhandler/lib/element.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/lib/element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/element_finding_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/coordinates_tests/element_in_frame.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/coordinates_tests/element_in_nested_frame.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/bin/elementexplorer.js" />
@@ -4420,6 +4470,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/colors/lib/extendStringPrototype.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/firefox/extension.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/firefox/extension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/firefox/extension_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/node_modules/minimatch/test/extglob-ending-with-state-char.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/minimatch/test/extglob-ending-with-state-char.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/gaze/node_modules/globule/node_modules/minimatch/test/extglob-ending-with-state-char.js" />
@@ -4436,8 +4487,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/extremumBy.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/lib/util/factory.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/lib/grunt/fail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/ngHint/spec/fail_spec.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-protractor-runner/test/failedTest.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/ngHint/spec/failureConfig.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/spec/failure_egs.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/action/store/false.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/lib/action/store/false.js" />
@@ -4524,6 +4577,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/load-grunt-tasks/node_modules/findup-sync/lib/findup-sync.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/findup-sync/test/findup-sync_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/test/findup-sync_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/firefox/firefox_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/webdriver/firefoxdomexecutor.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/firefoxdomexecutor.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/useragent/test/fixtures/firefoxes.yaml" />
@@ -4649,6 +4703,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/useragent/node_modules/lru-cache/test/foreach.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/foreach.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/examples/public/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/form/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/form/form.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/formPage.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/formSelectionPage.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/form-data/lib/form_data.js" />
@@ -4708,6 +4764,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/fileset/node_modules/glob/examples/g.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/glob/examples/g.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/examples/g.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/gaze/lib/gaze.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json" />
@@ -4720,6 +4777,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/test/gelfAppender-test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/generation/generate-big5-table.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/shelljs/scripts/generate-docs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/generate-docs.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tough-cookie/generate-pubsuffix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/iconv-lite/generation/generate-singlebyte.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion/test/generate.sh" />
@@ -4730,6 +4788,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/colors/themes/generic-logging.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/html5/geolocation.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/examples/get-products.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/get-version.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/object/get.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/object/get.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/object/get.js" />
@@ -4938,6 +4997,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/http/http.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/http-signature/http_signing.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/test/http/http_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/http/http_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/httpserver.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/lib/transports/websocket/hybi-07-12.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/lib/transports/websocket/hybi-16.js" />
@@ -5007,6 +5067,11 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/public/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/policyfile/doc/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/amd-test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/browser-test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/header-test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/ngHint/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/index.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/firefox/index.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/http/index.js.src.html" />
@@ -5406,6 +5471,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/test/index.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/lib/index.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/remote/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/testing/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/ngHint/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/timeline/index.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/collection/indexBy.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/collection/indexBy.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/collection/indexBy.js" />
@@ -5421,7 +5490,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/internal/indexOfNaN.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/indexOfNaN.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/internal/indexOfNaN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/testing/index_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/lib/source-map/indexed-source-map-consumer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/timeline/indextemplate.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/test/infer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/node_modules/pako/lib/zlib/inffast.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/node_modules/pako/lib/inflate.js" />
@@ -5504,11 +5575,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/int.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/lib/js-yaml/type/int.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-jasmine/integration-tests.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/interaction/interaction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/interaction/interaction.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine/intercept.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/intercept.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/node_modules/amdefine/intercept.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/node_modules/amdefine/intercept.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/node_modules/amdefine/intercept.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/node_modules/amdefine/intercept.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/interface_goog_debug_EntryPointMonitor.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/interface_goog_disposable_IDisposable.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/interface_goog_events_Listenable.html" />
@@ -5541,6 +5615,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/internal/invokePath.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/lib/io.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/test/io.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/io_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/lang/isArguments.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/lang/isArguments.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/lang/isArguments.js" />
@@ -6083,11 +6158,13 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/webdriver/logging.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/logging.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/test/logging_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/logging_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/examples/loggly-appender.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/lib/appenders/loggly.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/test/logglyAppender-test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/labs/testing/logicmatcher.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/labs/testing/logicmatcher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/login.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/debug/logrecord.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/debug/logrecord.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/test/logstashUDP-test.js" />
@@ -6329,6 +6406,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/mini-require.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/mini-require.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/mini-require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/mini-require.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/.bin/minijasminenode" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/bin/minijn" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/schema/minimal.js" />
@@ -6559,7 +6637,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/test/new-glob-optional-options.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/async/nexttick.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/nexttick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/ngHint/ngHint.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/log4js/node_modules/semver/test/no-module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/ngHint/noNgHint.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/ngHint/noTag.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/findup-sync/node_modules/glob/test/nocase-nomagic.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/cli/node_modules/glob/test/nocase-nomagic.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/gaze/node_modules/globule/node_modules/glob/test/nocase-nomagic.js" />
@@ -6605,6 +6686,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/utility/noop.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/utility/noop.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/utility/noop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/noop.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/nopt/bin/nopt.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-cli/node_modules/nopt/lib/nopt.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/noptify/node_modules/nopt/bin/nopt.js" />
@@ -6700,6 +6782,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-protractor-runner/node_modules/split/test/options.asynct.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/src/options.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/lib/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/chrome/options_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/optparse.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/ibrik/node_modules/coffee-script/lib/coffee-script/optparse.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/ecstatic/lib/ecstatic/opts.js" />
@@ -7220,6 +7303,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/load-grunt-tasks/node_modules/multimatch/node_modules/minimatch/node_modules/brace-expansion/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/load-grunt-tasks/node_modules/multimatch/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/load-grunt-tasks/node_modules/multimatch/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/adm-zip/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/node_modules/inherits/package.json" />
@@ -7259,9 +7343,15 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tough-cookie/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/tunnel-agent/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/saucelabs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/tmp/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/node_modules/amdefine/package.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/string/pad.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/minimatch/node_modules/brace-expansion/test/pad.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/string/pad.js" />
@@ -7287,6 +7377,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/pageWithOnBeforeUnloadMessage.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/pageWithOnLoad.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/pageWithOnUnload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/page_loading_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/scrolling_tests/page_with_double_overflow_auto.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/coordinates_tests/page_with_element_out_of_view.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/coordinates_tests/page_with_empty_element.html" />
@@ -7458,6 +7549,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/node_modules/utile/node_modules/mkdirp/test/perm_sync.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/useragent/test/fixtures/pgts.yaml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/phantomjs.js.src.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/phantomjs.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/object/pick.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/object/pick.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/object/pick.js" />
@@ -7492,7 +7584,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/lib/plugins.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/polling-jsonp.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/polling-xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/polling/polling.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/components/learnboost-engine.io-client/lib/transports/polling.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/polling/polling.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/graceful-fs/polyfills.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/shelljs/src/popd.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/portfinder/test/port-finder-socket-test.js" />
@@ -7503,6 +7597,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/portfinder/lib/portfinder.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/net/portprober.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/net/portprober.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/net/portprober_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp/examples/pow.js.orig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp/examples/pow.js.orig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp/examples/pow.js.rej" />
@@ -7522,11 +7617,13 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/prefix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/prefix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/prefix-source-map.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/prefix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/build/prefix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/build/prefix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/prefix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/prefix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/prefix-utils.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/prefix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/prefix_chars.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/examples/prefix_chars.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/lib/preprocessor.js" />
@@ -7538,6 +7635,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/examples/pretty-print.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-protractor-runner/node_modules/split/examples/pretty.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/print-script" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/print_logs.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/dist/amd/handlebars/compiler/printer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/dist/cjs/handlebars/compiler/printer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/lib/handlebars/compiler/printer.js" />
@@ -7554,6 +7652,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/useragent/product_isversion.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/firefox/profile.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/firefox/profile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/firefox/profile_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/examples/profiler.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/cli/progress.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/cli/examples/progress.js" />
@@ -7574,10 +7673,12 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/utility/property.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/utility/property.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/utility/property.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/property.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/utility/propertyOf.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/utility/propertyOf.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/utility/propertyOf.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/utility/propertyOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/propertyOf.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/testing/propertyreplacer.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/testing/propertyreplacer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/lib/proto.js" />
@@ -7592,6 +7693,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/lib/node-http-proxy/proxy-table.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/proxy.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/lib/middleware/proxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/proxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/proxy_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/examples/psubscribe.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/benches/stress/pubsub/pub.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/pub.js" />
@@ -7647,6 +7750,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/ecstatic/test/range.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/utility/range.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/utility/range.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/range.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/lib/types/raw.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/internal/reEscape.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/internal/reEscape.js" />
@@ -7856,6 +7960,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/string/repeat.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/string/repeat.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/string/repeat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/repeater/repeater.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/repeater/repeater.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/indent-string/node_modules/.bin/repeating" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/dateformat/node_modules/meow/node_modules/indent-string/node_modules/.bin/repeating" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/repl.js" />
@@ -7878,6 +7984,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/request.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/node_modules/utile/test/require-directory-test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/amd-test/require.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/requirejs.config.tpl.coffee" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/requirejs.config.tpl.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jasmine-core/requirements.txt" />
@@ -7971,6 +8078,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/run-tests.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/uglify-js/test/run-tests.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/run-tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/run-tests.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/lib/command/common/run-with-cover.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/async/run.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/chain/run.js" />
@@ -8032,6 +8140,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/examples/sample_document.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/spec/sample_spec.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/lib/driverProviders/sauce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/sauce_connect_setup.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/lib/sax.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-codec.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data-generated.js" />
@@ -8060,7 +8169,16 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/screen/screen_y_long.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/screen/screen_y_too_long.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/test/script-close-better.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/amd-test/script.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/browser-test/script.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/header-test/script.coffee" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/test/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/amd-test/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/browser-test/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/header-test/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/amd-test/script.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/browser-test/script.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/header-test/script.map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/unit/scripts.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/scroll.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/scroll2.html" />
@@ -8104,6 +8222,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/benches/stress/rpushblpop/server.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/hawk/lib/server.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/hawk/test/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/header-test/server.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/tiny-lr-fork/node_modules/faye-websocket/spec/server.key" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/webdriver/session.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/examples/session.js" />
@@ -8128,6 +8247,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/jasmine-core/setup.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/test/setup.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/rimraf/test/setup.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/shadow/shadow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/shadow/shadow.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/shelljs/shell.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/shiftjis.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/internal/shimIsPlainObject.js" />
@@ -8282,21 +8403,26 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map/source-map-consumer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map/source-map-consumer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map/source-map-consumer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/source-map-consumer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/lib/source-map/source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map/source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map/source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map/source-map-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/source-map-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/source-map-support.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/lib/source-map.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/lib/source-map.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/lib/source-map/source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/lib/source-map/source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/lib/source-map/source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/lib/source-map/source-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/lib/sourceCache.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/lib/middleware/source_files.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/tasks/lib/sourcemap.js" />
@@ -8336,8 +8462,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/testing/stacktrace.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/stacktrace.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/test/stacktrace_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/stale_element_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/examples/http/standalone-proxy.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/examples/websocket/standalone-websocket-proxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/timeline/spec/standalonelog.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/string/startCase.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/string/startCase.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/string/startCase.js" />
@@ -8454,21 +8582,26 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/lib/action/subparsers.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/examples/subqueries.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/examples/subquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/ngHint/spec/successConfig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/ngHint/spec/success_spec.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/build/suffix-browser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/build/suffix-browser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/suffix-browser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/suffix-browser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/suffix-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/suffix-browser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/build/suffix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/build/suffix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/suffix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/suffix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/suffix-source-map.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/suffix-source-map.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/build/suffix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/build/suffix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/suffix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/suffix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/suffix-utils.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/suffix-utils.jsm" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/collection/sum.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/math/sum.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/collection/sum.js" />
@@ -8508,6 +8641,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/spec/syntax_error.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/docs/system-setup.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/tables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/tag_name_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/dom/tagname.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/dom/tagname.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/array/tail.js" />
@@ -8574,11 +8708,13 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-api.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-api.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-api.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/test/source-map/test-array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/source-map/test-array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-array-set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-array-set.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/test/test-async.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/rimraf/test/test-async.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/test/source-map/test-base64-vlq.js" />
@@ -8586,16 +8722,19 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-base64-vlq.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-base64-vlq.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-base64-vlq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-base64-vlq.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/test/source-map/test-base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/source-map/test-base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-base64.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/test/source-map/test-binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/source-map/test-binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-binary-search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-binary-search.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/tmp/test-clone.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-constants.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-delayed-http-upload.js" />
@@ -8607,6 +8746,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-dog-fooding.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-dog-fooding.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-dog-fooding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-dog-fooding.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-events.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-exceptions.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-handle-source-errors.js" />
@@ -8643,6 +8783,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/test-prefix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/test-prefix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/test-prefix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/test-prefix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/test/integration/test-proxy-readable.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-methods.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/tests/test-request-protocols.js" />
@@ -8664,21 +8805,25 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/test/source-map/test-source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-source-map-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-source-map-generator.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/test/source-map/test-source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/source-map/test-source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/test/source-map/test-source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/test/source-map/test-source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/test/source-map/test-source-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/test-source-node.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-concat/node_modules/source-map/build/test-suffix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/build/test-suffix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/source-map/build/test-suffix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/node_modules/source-map/build/test-suffix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/source-map/build/test-suffix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/build/test-suffix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/rimraf/test/test-sync.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/rimraf/test/test-sync.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/test-tokenizer.html" />
@@ -8759,6 +8904,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/node-uuid/test/test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/oauth-sign/test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/tmp/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/jasminewd2/scripts/test.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/multiparty/node_modules/stream-counter/test/test.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/sax/examples/test.xml" />
@@ -8773,6 +8920,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/minijasminenode/spec/test_spec.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/grunt-legacy-log/node_modules/underscore.string/test/test_standalone.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/underscore.string/test/test_standalone.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/test/test_util.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/test/test_weekofyear.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/dateformat/test/weekofyear/test_weekofyear.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/dateformat/test/test_weekofyear.sh" />
@@ -8787,17 +8935,21 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/useragent/bin/testfiles.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/examples/testformatters.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/examples/testformatters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/testonsauce.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/test/testparser.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/testing/testrunner.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/testing/testrunner.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/domhandler/test/tests.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/optionator/node_modules/fast-levenshtein/test/tests.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/testserver.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/test/testutil.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/test/testutil_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/lib/report/text-summary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/text.coffee" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/lib/report/text.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/connect/node_modules/body-parser/lib/types/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/text.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/optionator/node_modules/fast-levenshtein/test/text1.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/escodegen/node_modules/optionator/node_modules/fast-levenshtein/test/text2.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/js/themes/modern/theme.min.js" />
@@ -8820,6 +8972,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/utility/times.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/utility/times.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/utility/times.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/times.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/timestamp.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/lib/js-yaml/type/timestamp.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/node_modules/.bin/tiny-lr-fork" />
@@ -9017,7 +9170,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/utility/uniqueId.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/utility/uniqueId.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/js-yaml/node_modules/argparse/node_modules/lodash/utility/uniqueId.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/node_modules/xmlbuilder/node_modules/lodash/utility/uniqueId.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/plugins/timeline/spec/unit.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/policyfile/tests/unit.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/unit_test.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/src/reporters/unix.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/examples/unix_socket.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/minimist/test/unknown.js" />
@@ -9029,6 +9185,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/webdriver/until.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/until.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/test/until_test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/ngHint/unused.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/array/unzip.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/array/unzip.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/lodash/array/unzip.js" />
@@ -9119,7 +9276,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/request/node_modules/http-signature/lib/util.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/http/util.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/labs/useragent/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/lib/source-map/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/source-map-support/node_modules/source-map/test/source-map/util.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/test/util.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/http/util_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/node_modules/utile/test/utile-test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/lodash/utility.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-uglify/node_modules/lodash/utility.js" />
@@ -9192,12 +9352,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/dist/amd/handlebars/compiler/visitor.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/handlebars/lib/handlebars/compiler/visitor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/scripts/wait_for_browser_provider.sh" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-contrib-watch/tasks/watch.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/lib/watcher.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/docs/source/lib/goog/testing/watchers.js.src.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/testing/watchers.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/lib/debugger/clients/wddebugger.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/lib/web-server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/testapp/scripts/web-server.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/redis/examples/web_server.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/lib/vendor/web-socket-js/web_socket.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-protractor-runner/scripts/webdriver-manager-update" />
@@ -9265,6 +9427,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/optimist/test/whitespace.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/win32frameset.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/testing/window.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/test/window_test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/themes/winston-dark.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/colors/themes/winston-dark.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt/node_modules/colors/themes/winston-light.js" />
@@ -9357,6 +9520,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/http-proxy/test/macros/ws.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin/wscat" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/bin/wscat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/node_modules/xml2js/x.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma-coverage/node_modules/istanbul/node_modules/resolve/test/subdirs/node_modules/a/b/c/x.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/overflow/x_auto_y_auto.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/overflow/x_auto_y_hidden.html" />
@@ -9438,11 +9602,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/karma/node_modules/glob/test/zz-cleanup.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/protractor/node_modules/glob/test/zz-cleanup.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/grunt-http-server/node_modules/http-server/node_modules/ecstatic/test/public/中文/檔案.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.appcache" afterPath="$PROJECT_DIR$/game.appcache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.html" afterPath="$PROJECT_DIR$/game.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.min.html" afterPath="$PROJECT_DIR$/game.min.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Boku.iws" />
@@ -9751,7 +9910,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430454704095</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1. removed scaleBodyService, 2. added drag-n-drop, 3. updated UI, 4. added appcache">
+      <created>1430455394983</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1430455394983</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
