@@ -117,7 +117,9 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
         var h = $window.innerHeight;
         var x = clientX;
         var y = clientY;
+        if (w > h)
         x = x - (w / 2 - h / 2);
+        else y = y - (h / 2 - w / 2);
         if (row !== - 1 && col !== -1) {
             verticalDraggingLine.setAttribute("x1", x);
             verticalDraggingLine.setAttribute("x2", x);
@@ -239,12 +241,21 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
 
         var w = $window.innerWidth;
         var h = $window.innerHeight;
-
+        var xp, yp;
         //var x = e.clientX;
         //var y = e.clientY;
 
-        var xp = (x - (w / 2 - h / 2)) / h;
-        var yp = y / h;
+        if (w > h)
+            x = x - (w / 2 - h / 2);
+        else y = y - (h / 2 - w / 2);
+        if (w > h) {
+            xp = x / h;
+            yp = y / h;
+        }
+        else {
+            xp = x / w;
+            yp = y / w;
+        }
 
         console.log("xp" + xp);
         console.log("yp" + yp);
