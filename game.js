@@ -1,9 +1,8 @@
 'use strict';
-// TODO: remove stateService before launching the game.
 angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$log','$timeout',
-    'gameService', 'hexagon', 'resizeGameAreaService', function (
+    'gameService', 'hexagon','dragAndDropService', 'resizeGameAreaService', function (
       $window, $scope, $log,$timeout,
-      gameService, hexagon, resizeGameAreaService) {
+      gameService, hexagon, dragAndDropService, resizeGameAreaService) {
     //setting up canvas
 
     resizeGameAreaService.setWidthToHeight(1);
@@ -24,7 +23,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
             [2, 0], [3, 0], [4, 0], [5, 0]];
         var gameOver = false;
 
-    var ctrl = this;
+    //var ctrl = this;
     console.log("b4");
     $scope.board = setBoard();
     //$scope.winner = winner;
@@ -74,30 +73,34 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
     // Before getting any updateUI message, we show an empty board to a viewer (so you can't perform moves).
     updateUI({stateAfterMove: {}, turnIndexAfterMove: 0, yourPlayerIndex: -2});
     
-    $scope.cellClicked = function (e) {
-        //if not my turn, do nothing
-        console.log("x,y", e);
-        if (!$scope.isYourTurn) {
-            return;
-        }
-        //e = e.changedTouches[0];
-        console.log("changed x" + e.clientX - gameArea.offsetLeft);
-
-        var position = getRowCol(e.clientX, e.clientY);
-        tryMakeMove(position.x, position.y);
-        //tryMakeMove(row, col);
-    }
+    //$scope.cellClicked = function (e) {
+    //    //if not my turn, do nothing
+    //    console.log("x,y", e);
+    //    if (!$scope.isYourTurn) {
+    //        return;
+    //    }
+    //    //e = e.changedTouches[0];
+    //    console.log("changed x" + e.clientX - gameArea.offsetLeft);
+    //
+    //    var position = getRowCol(e.clientX, e.clientY);
+    //    tryMakeMove(position.x, position.y);
+    //    //tryMakeMove(row, col);
+    //}
       //var position = getRowCol(e.clientX, e.clientY);
       //tryMakeMove(position.x, position.y);
 
 
     var gameArea = document.getElementById("gameArea");
+        var draggingLines = document.getElementById("draggingLines");
+        var horizontalDraggingLine = document.getElementById("horizontalDraggingLine");
+        var verticalDraggingLine = document.getElementById("verticalDraggingLine");
     var draggingStartedRowCol = null; // The {row: YY, col: XX} where dragging started.
     //var draggingPiece = null;
     var nextZIndex = 61;
     var oldrow = null;
     var oldcol = null;
-    window.handleDragEvent = handleDragEvent;
+    //window.handleDragEvent = handleDragEvent;
+        dragAndDropService.addDragListener("gameArea", handleDragEvent);
     function handleDragEvent(type, clientX, clientY) {
         // Center point in gameArea
         //var x = clientX - gameArea.offsetLeft;
@@ -108,9 +111,24 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
         var row = getRowCol(clientX, clientY).x;
         var col = getRowCol(clientX, clientY).y;
 
+
+        draggingLines.style.display = "inline";
+        var w = $window.innerWidth;
+        var h = $window.innerHeight;
+        var x = clientX;
+        var y = clientY;
+        x = x - (w / 2 - h / 2)
+        verticalDraggingLine.setAttribute("x1", x);
+        verticalDraggingLine.setAttribute("x2", x);
+        horizontalDraggingLine.setAttribute("y1", y);
+        horizontalDraggingLine.setAttribute("y2", y);
+
+
+
+
            // if (type !== "touchend" && type !=="touchcancel" && type !=="touchleave") {
         if (type === "touchstart" || type === "touchmove") {
-                if ((row === oldrow && col === oldcol) || (row === -1 && col === -1)) return;
+                if ((row === oldrow && col === oldcol) || (row === -1 && col === -1) || (row < 0 || col < 0)) return;
                 else {
                     //if (oldrow !== null && oldcol !== null)
                     //$scope.board[oldrow][oldcol] = '';
@@ -135,6 +153,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
                      col = oldcol;
                  }
                  tryMakeMove(row, col);
+                 draggingLines.style.display = "none";
             }
         }
 
@@ -167,7 +186,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
                         cnt = 1;
                     }
                     if( cnt === N ){
-                        return board[i][j];
+                        //return board[i][j];
                     }
                 }
             }
@@ -185,7 +204,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
                         cnt = 1;
                     }
                     if( cnt === N ){
-                        return board[i][j];
+                        //return board[i][j];
                     }
                 }
             }
@@ -203,7 +222,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
                         cnt = 1;
                     }
                     if(cnt === N){
-                        return board[row][col];
+                        //return board[row][col];
                     }
                 }
             }
@@ -254,6 +273,20 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
         //col = row;
         //row = temp;
 
+        var j;
+        var valid = false;
+        for(i=0; i<11; ++i){
+            for(j=horIndex[i][0]; j<horIndex[i][1]; ++j){
+                if (row === i && col === j) {
+                    valid = true;
+                    break;
+                }
+            }
+        }
+        if (!valid) {
+            row = -1;
+            col = -1;
+        }
         console.log("row" + row);
         console.log("col" + col);
       return {x:row, y:col};
@@ -329,7 +362,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
 
             var winner = getWinner(boardAfterMove);
             var firstOperation;
-            if (winner !== '' || isTie(boardAfterMove)) {
+            if ( winner !== '' || isTie(boardAfterMove)) {
                 // Game over.
                 console.log("Game over");
                 gameOver = true;
@@ -513,7 +546,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
          * Returns the move that the computer player should do for the given board.
          * The computer will play in a random empty cell in the board.
          */
-        this.createComputerMove = function(board, turnIndexBeforeMove) {
+        function createComputerMove(board, turnIndexBeforeMove) {
             var possibleMoves = [];
             var i, j;
             for (i = 0; i < 11; i++) {
@@ -529,18 +562,6 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
             console.log("random move is: ", randomMove[2].set.value.row, randomMove[2].set.value.col);
             return randomMove;
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
     gameService.setGame({
       gameDeveloperEmail: "ycy247@nyu.edu",
