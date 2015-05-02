@@ -117,11 +117,13 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
         var h = $window.innerHeight;
         var x = clientX;
         var y = clientY;
-        x = x - (w / 2 - h / 2)
-        verticalDraggingLine.setAttribute("x1", x);
-        verticalDraggingLine.setAttribute("x2", x);
-        horizontalDraggingLine.setAttribute("y1", y);
-        horizontalDraggingLine.setAttribute("y2", y);
+        x = x - (w / 2 - h / 2);
+        if (row !== - 1 && col !== -1) {
+            verticalDraggingLine.setAttribute("x1", x);
+            verticalDraggingLine.setAttribute("x2", x);
+            horizontalDraggingLine.setAttribute("y1", y);
+            horizontalDraggingLine.setAttribute("y2", y);
+        }
 
 
 
@@ -659,9 +661,11 @@ angular.module('myApp').service('hexagon', function($window) {
         var color;
         //console.log(turn);
         if(turn == 'R')
-            color = "rgb(" + parseInt(timeDiff*255/500, 10) + ",0,0)";
+            //color = "rgb(" + parseInt(timeDiff*255/500, 10) + ",0,0)";
+            color = "#000000";
         else if( turn == 'Y')
-            color = "rgb(" + parseInt(timeDiff*255/500, 10) + ","+parseInt(timeDiff*255/500, 10)+",0)";
+            //color = "rgb(" + parseInt(timeDiff*255/500, 10) + ","+parseInt(timeDiff*255/500, 10)+",0)";
+            color = "#FFFFFF";
         //console.log(color);
         hex.drawHex(x, y, color, false);
         requestAnimFrame(function() {

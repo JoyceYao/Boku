@@ -83,9 +83,11 @@ angular.module('myApp').service('hexagon', function($window) {
         var color;
         //console.log(turn);
         if(turn == 'R')
-            color = "rgb(" + parseInt(timeDiff*255/500, 10) + ",0,0)";
+            //color = "rgb(" + parseInt(timeDiff*255/500, 10) + ",0,0)";
+            color = "#000000";
         else if( turn == 'Y')
-            color = "rgb(" + parseInt(timeDiff*255/500, 10) + ","+parseInt(timeDiff*255/500, 10)+",0)";
+            //color = "rgb(" + parseInt(timeDiff*255/500, 10) + ","+parseInt(timeDiff*255/500, 10)+",0)";
+            color = "#FFFFFF";
         //console.log(color);
         hex.drawHex(x, y, color, false);
         requestAnimFrame(function() {
