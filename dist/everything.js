@@ -651,7 +651,12 @@ angular.module('myApp').service('hexagon', function($window) {
                         hex.drawHex(currentHexX, currentHexY, "#FFFFFF", debugText);
                     else if( board[x][y] == '')
                         //hex.drawHex(currentHexX, currentHexY, "#999999", debugText);
-                        hex.drawHex(currentHexX, currentHexY, "#999999", debugText);
+                        //hex.drawHex(currentHexX, currentHexY, "#999999", debugText);
+                        //hex.drawHex(currentHexX, currentHexY, "#A34719", debugText);
+                        //hex.drawHex(currentHexX, currentHexY, "#993300", debugText);
+                        //hex.drawHex(currentHexX, currentHexY, "#AC8359", debugText);
+                        hex.drawHex(currentHexX, currentHexY, "#A32900", debugText);
+
                 }
             }
             offsetColumn = !offsetColumn;
