@@ -160,7 +160,7 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
     var firstOperation;
     if (winner !== '' || isTie(boardAfterMove)) {
       // Game over.
-        console.log("Game over");
+        //console.log("Game over");
         gameOver = true;
       firstOperation = {endMatch: {endMatchScores: 
         (winner === 'R' ? [1, 0] : (winner === 'Y' ? [0, 1] : [0, 0]))}};

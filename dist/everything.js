@@ -190,7 +190,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
                         cnt = 1;
                     }
                     if( cnt === N ){
-                        //return board[i][j];
+                        return board[i][j];
                     }
                 }
             }
@@ -208,7 +208,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
                         cnt = 1;
                     }
                     if( cnt === N ){
-                        //return board[i][j];
+                        return board[i][j];
                     }
                 }
             }
@@ -226,7 +226,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
                         cnt = 1;
                     }
                     if(cnt === N){
-                        //return board[row][col];
+                        return board[row][col];
                     }
                 }
             }
@@ -377,7 +377,7 @@ angular.module('myApp',['ngTouch']).controller('Ctrl',['$window', '$scope', '$lo
             var firstOperation;
             if ( winner !== '' || isTie(boardAfterMove)) {
                 // Game over.
-                console.log("Game over");
+                //console.log("Game over");
                 gameOver = true;
                 firstOperation = {endMatch: {endMatchScores:
                     (winner === 'R' ? [1, 0] : (winner === 'Y' ? [0, 1] : [0, 0]))}};
