@@ -655,7 +655,8 @@ angular.module('myApp').service('hexagon', function($window) {
                         //hex.drawHex(currentHexX, currentHexY, "#A34719", debugText);
                         //hex.drawHex(currentHexX, currentHexY, "#993300", debugText);
                         //hex.drawHex(currentHexX, currentHexY, "#AC8359", debugText);
-                        hex.drawHex(currentHexX, currentHexY, "#A32900", debugText);
+                        //hex.drawHex(currentHexX, currentHexY, "#A32900", debugText);
+                        hex.drawHex(currentHexX, currentHexY, "#DF521F", debugText);
 
                 }
             }
