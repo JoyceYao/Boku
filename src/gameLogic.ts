@@ -1,5 +1,36 @@
+type Board = string[][];
 
-angular.module('myApp').service('gameLogic', function(){
+interface BoardDelta {
+  row: number;
+  col: number;
+  delDirRow: number;
+  delDirCol: number;
+  delDis: number;
+}
+
+interface IPosition {
+  row: number;
+  col: number;
+}
+
+interface IRowColComment extends BoardDelta {
+  comment: string;
+}
+
+interface IState {
+  board: Board;
+  delta: BoardDelta;
+}
+
+interface IExampleMove extends IIsMoveOk {
+  comment: IComment;
+}
+
+interface IComment {
+  en: string;
+}
+
+module gameLogic {
 /*
  * Grid representation:
  *
@@ -14,69 +45,65 @@ angular.module('myApp').service('gameLogic', function(){
  *   7     x x x x x x x x
  *   8       x x x x x x x
  *   9         x x x x x x
- *  10           x x x x x  
+ *  10           x x x x x
  */
 
 /* Grid representation:
  *
  *     0 1 2 3 4 5 6 7 8 9
- *   0       x x x 
+ *   0       x x x
  *   1   x x x x x x x
  *   2 x x x x x x x x x
  *   3 x x x x x x x x x
  *   4 x x x x x x x x x
- *   5 x x x x x x x x x  
- *   6 x x x x x x x x x 
- *   7     x x x x x     
- *   8         x         
- *   9                  
- *  10                    
+ *   5 x x x x x x x x x
+ *   6 x x x x x x x x x
+ *   7     x x x x x
+ *   8         x
+ *   9
+ *  10
  */
 
+  //the number of consecutive pawns to win
+  var N = 5;
+  //the boundary of horizontal direction
+  var horIndex = [[0, 5], [0, 6], [0, 7], [0, 8], [0, 9], [0, 10],
+                  [1, 10], [2, 10], [3, 10], [4, 10], [5, 10]];
+  //the boundary of vertical direction
+  var verIndex = [[0, 6], [0, 7], [0, 8], [0, 9], [0, 10],
+                  [1, 11], [2, 11], [3, 11], [4, 11], [5, 11]];
+  //the boundary of diagonal direction
+  // starting point from NW side, end at row==10 or col==9
+  var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
+                  [2, 0], [3, 0], [4, 0], [5, 0]];
 
-//the number of consecutive pawns to win
-var N = 5;
-//the boundary of horizontal direction
-var horIndex = [[0, 5], [0, 6], [0, 7], [0, 8], [0, 9], [0, 10],
-  [1, 10], [2, 10], [3, 10], [4, 10], [5, 10]];
-//the boundary of vertical direction
-var verIndex = [[0, 6], [0, 7], [0, 8], [0, 9], [0, 10],
-  [1, 11], [2, 11], [3, 11], [4, 11], [5, 11]];
-//the boundary of diagonal direction
-// starting point from NW side, end at row==10 or col==9
-var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
-  [2, 0], [3, 0], [4, 0], [5, 0]];
-    var gameOver = false;
+  var PlayersNum = 2;
 
-/*jslvar devel: true, indent: 2 */
-/*global console */
-  //Defines that JavaScript code should be executed in "strict mode".
-  'use strict';
-  function isEqual(object1, object2) {
+  function isEqual(object1: any, object2: any) {
     return JSON.stringify(object1) === JSON.stringify(object2);
   }
 
-  function copyObject(object) {
+  function copyObject(object: any) {
     return JSON.parse(JSON.stringify(object));
   }
 
-  /** Return the winner (either 'R' or 'Y') or '' if there is no winner. */
-  //var gamehasnotended;
-  function getWinner(board) {
-      //gamehasnotended = false;
+  export function getHorIndex(row: number, col: number): number {
+    return horIndex[row][col];
+  }
+
+  export function getWinner(board: Board) {
     //check left to right
-    var i, cnt, j;
-    for(i=0; i<11; ++i) {
-      cnt = 0;
-      for(j=horIndex[i][0]; j<horIndex[i][1]; ++j){
-        if(board[i][j] !== ''){
-          if(j===0 || board[i][j-1] === board[i][j]){
+    for (var i=0; i<11; ++i) {
+      var cnt = 0;
+      for (var j=horIndex[i][0]; j<horIndex[i][1]; ++j){
+        if (board[i][j] !== ''){
+          if (j===0 || board[i][j-1] === board[i][j]){
             cnt++;
-          }
-          else{
+          } else {
             cnt = 1;
           }
-          if( cnt === N ){
+
+          if ( cnt === N ){
             return board[i][j];
           }
         }
@@ -84,53 +111,51 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
     }
 
     //check NE<->SW
-    for(j=0; j<10; ++j){
-      cnt = 0;
-      for(i=verIndex[j][0]; i<verIndex[j][1]; ++i){
-        if(board[i][j] !== ''){
-          if(i===0 || board[i-1][j] === board[i][j]){
+    for (var j=0; j<10; ++j){
+      var cnt = 0;
+      for (var i=verIndex[j][0]; i<verIndex[j][1]; ++i){
+        if (board[i][j] !== ''){
+          if (i===0 || board[i-1][j] === board[i][j]){
             cnt++;
-          }
-          else{
+          } else {
             cnt = 1;
           }
-          if( cnt === N ){
+          if (cnt === N){
             return board[i][j];
           }
         }
       }
     }
-    var row, col;
+
+    var row: number, col: number;
     //check NW<->SE
-    for(i=0; i<10; ++i) {
-      cnt =0;
-      for(row = tilIndex[i][0], col = tilIndex[i][1]; row<11 && col<10; row++, col++){
-        if(board[row][col] !== ''){
-          if(row === 0 || col===0 || board[row][col]===board[row-1][col-1]){
+    for (var i=0; i<10; ++i) {
+      var cnt = 0;
+      for (row = tilIndex[i][0], col = tilIndex[i][1]; row<11 && col<10; row++, col++){
+        if (board[row][col] !== ''){
+          if (row === 0 || col===0 || board[row][col]===board[row-1][col-1]){
             cnt++;
-          }
-          else{
+          } else {
             cnt = 1;
           }
-          if(cnt === N){
+          if (cnt === N){
             return board[row][col];
           }
         }
       }
     }
-      //gamehasnotended = true;
     return '';
-  }//Done
-  function isInsideBoard(row,col) {
-    return (row>=0 && row<=10) && (horIndex[row][0] <= col) && (col < howIndex[row][1]);
+  }
+
+  function isInsideBoard(row: number, col: number): boolean {
+    return (row>=0 && row<=10) && (horIndex[row][0] <= col) && (col < horIndex[row][1]);
   }
 
   /** Returns true if the game ended in a tie because there are no empty cells. */
-  function isTie(board) {
-    var i,j;
-    for(i=0; i<11; ++i) {
-      for(j=horIndex[i][0]; j<horIndex[i][1]; ++j){
-        if(board[i][j] === ''){
+  function isTie(board: Board): boolean {
+    for (var i=0; i<11; ++i) {
+      for (var j=horIndex[i][0]; j<horIndex[i][1]; ++j){
+        if (board[i][j] === ''){
           return false;
         }
       }
@@ -138,13 +163,13 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
     return true;
   }//Done
 
-  /** 
-   * Returns the move that should be performed when player 
-   * with index turnIndexBeforeMove makes a move in cell row X col. 
+  /**
+   * Returns the move that should be performed when player
+   * with index turnIndexBeforeMove makes a move in cell row X col.
    */
-
-  function createMove(board, row, col, delDirRow, delDirCol, delDis, turnIndexBeforeMove) {
-    if(board === undefined) board = setBoard();
+   export function createMove(board: Board, row: number, col: number, delDirRow: number,
+               delDirCol: number, delDis: number, turnIndexBeforeMove: number): IMove {
+    if (board === undefined) board = setBoard();
     if (board[row][col] !== '') {
         throw new Error("One can only make a move in an empty position!");
       }
@@ -152,17 +177,17 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
     // first one should be Red
     boardAfterMove[row][col] = turnIndexBeforeMove === 0 ? 'R' : 'Y';
     //remove one of the opponent's pawn
-    if(delDis !== 0) {
+    if (delDis !== 0) {
       boardAfterMove[row+delDirRow*delDis][col+delDirCol*delDis] = '';
     }
-    
+
     var winner = getWinner(boardAfterMove);
-    var firstOperation;
+    var firstOperation = {};
     if (winner !== '' || isTie(boardAfterMove)) {
       // Game over.
         //console.log("Game over");
-        gameOver = true;
-      firstOperation = {endMatch: {endMatchScores: 
+        //gameOver = true;
+      firstOperation = {endMatch: {endMatchScores:
         (winner === 'R' ? [1, 0] : (winner === 'Y' ? [0, 1] : [0, 0]))}};
     } else {
       // Game continues. Now it's the opponent's turn (the turn switches from 0 to 1 and 1 to 0).
@@ -173,13 +198,17 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
          {set: {key: 'delta', value: {row: row, col: col, delDirRow: delDirRow, delDirCol: delDirCol, delDis: delDis}}}];
   }//done
 
-  function isMoveOk(params) {
-    var move = params.move; 
-    var turnIndexBeforeMove = params.turnIndexBeforeMove; 
-    var stateBeforeMove = params.stateBeforeMove; 
-    var i, j;
+  export function isMoveOk(params: IIsMoveOk) {
+    var move = params.move;
+    var turnIndexBeforeMove = params.turnIndexBeforeMove;
+    var stateBeforeMove: IState = params.stateBeforeMove;
+
     try {
       var deltaValue = move[2].set.value;
+      console.log("isMoveOk[0-0-1] move[2]=" + JSON.stringify(move[2]));
+      console.log("isMoveOk[0-0-1] deltaValue=" + JSON.stringify(deltaValue));
+
+      console.log("isMoveOk[0-0-2]");
       var row = deltaValue.row;
       var col = deltaValue.col;
       // the row direction of the pawn that's going to be removed relative to row
@@ -191,16 +220,15 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
       // the distance of the pawn that's going to be removed relative to row/column
       // i.e. abs(removedRow - row + removedCol - col)
       var delDis = deltaValue.delDis;
-      var board = stateBeforeMove.board;
-      var rowBeforeMove = stateBeforeMove.row;
-      var colBeforeMove = stateBeforeMove.col;
-      var delDisBeforeMove = stateBeforeMove.delDis;
-      var delDirRowBeforeMove = stateBeforeMove.delDirRow;
-      var delDirColBeforeMove = stateBeforeMove.delDirCol;
-      var delRow = rowBeforeMove + delDisBeforeMove*delDirRowBeforeMove;
-      var delCol = colBeforeMove + delDisBeforeMove*delDirColBeforeMove;
+      var board = stateBeforeMove['board'];
+      var delta = stateBeforeMove['delta'];
+      var delDisBeforeMove = -1;
+      if (delta){
+        delDisBeforeMove = delta.delDis;
+      }
+
       if (board === undefined) {
-        // Initially (at the beginning of the match), stateBeforeMove is {}. 
+        // Initially (at the beginning of the match), stateBeforeMove is {}.
         board = setBoard();
       }
 
@@ -233,39 +261,42 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
       if(row<0 || row > 10) return false;
       if(horIndex[row][0] > col || horIndex[row][1] <= col){
         return false;
-      } 
+      }
     } catch (e) {
       // if there are any exceptions then the move is illegal
       return false;
     }
     return true;
   }
-  
+
   /** Returns an array of {stateBeforeMove, move, comment}. */
-  function getExampleMoves(initialTurnIndex, initialState, arrayOfRowColComment) {
-    var exampleMoves = [];
-    var state = initialState;
+  function getExampleMoves(initialTurnIndex: number, initialState: IState,
+          arrayOfRowColComment: IRowColComment[]): IExampleMove[] {
+    var exampleMoves : IExampleMove[] = [];
+    var state: IState = initialState;
     var turnIndex = initialTurnIndex;
     for (var i = 0; i < arrayOfRowColComment.length; i++) {
       var rowColComment = arrayOfRowColComment[i];
-      var move = createMove(state.board, rowColComment.row, rowColComment.col, rowColComment.delDirRow, rowColComment.delDirCol, rowColComment.delDis, turnIndex);
+      var move = createMove(state.board, rowColComment.row, rowColComment.col,
+        rowColComment.delDirRow, rowColComment.delDirCol, rowColComment.delDis, turnIndex);
       var stateAfterMove = {board : move[1].set.value, delta: move[2].set.value};
       exampleMoves.push({
-        stateBeforeMove: state,
-        stateAfterMove: stateAfterMove,
+        move: move,
         turnIndexBeforeMove: turnIndex,
         turnIndexAfterMove: 1 - turnIndex,
-        move: move,
+        stateBeforeMove: state,
+        stateAfterMove: stateAfterMove,
+        numberOfPlayers: PlayersNum,
         comment: {en: rowColComment.comment}});
-        
+
       state = stateAfterMove;
       turnIndex = 1 - turnIndex;
     }
     return exampleMoves;
   }
 
-  function getExampleGame() {
-    return getExampleMoves(0, {}, [
+  export function getExampleGame(): IExampleMove[] {
+    return getExampleMoves(0, null, [
       {row: 5, col: 5, delDirRow:0, delDirCol:0, delDis:0,  comment: "R put at middle of the board"},
       {row: 5, col: 6, delDirRow:0, delDirCol:0, delDis:0,  comment: "Y put next to it(trying to block it)"},
       {row: 4, col: 5, delDirRow:0, delDirCol:0, delDis:0,  comment: "R put one on it's neighbor to form two in a row"},
@@ -276,25 +307,23 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
       {row: 7, col: 3, delDirRow:0, delDirCol:0, delDis:0,  comment: "Y blocks the other direction as well"}
     ]);
   }
-  
-    function getRiddles() {
-    
+
+  export function getRiddles() {
     var board = setBoard();
     board[5][3] = 'R';
     board[5][4] = 'R';
     board[5][5] = 'R';
-    
-    
+
     board[6][7] = 'Y';
     board[6][3] = 'Y';
     board[1][3] = 'Y';
     board[4][4] = 'Y';
-    
+
     return [
       getExampleMoves(0,
         {
           board:board,
-          delta: {row: 4, col: 4, delDirRow:0, delDirCOl:0, delDis:0}
+          delta: {row: 4, col: 4, delDirRow:0, delDirCol:0, delDis:0}
         },
         [
         {row: 5, col: 6, delDirRow:0, delDirCol:0, delDis:0, comment: "Find the position for R where he could win in his next turn at either side of a 4-in-a-row line"},
@@ -304,49 +333,26 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
 
   }
 
-  
-    function setBoard(){
-      var i, j;
-      var board = new Array(11);
-      for(i=0; i<11; ++i){
-        board[i] = new Array(10);
-        for(j=horIndex[i][0]; j<horIndex[i][1]; ++j){
-          board[i][j] = '';
-        }
+  export function setBoard(){
+    var board = new Array(11);
+    for (var i=0; i<11; ++i){
+      board[i] = new Array(10);
+      for (var j=horIndex[i][0]; j<horIndex[i][1]; ++j){
+        board[i][j] = '';
       }
-        console.log("board" + board);
-      return board;
     }
+    console.log("board" + board);
+    return board;
+  }
 
-    // "Manual testing" --- expected result is [true, true, false].
-      var board = setBoard();
-      board[0][0] = 'R';
-      var board2 = copyObject(board);
-      board2[0][1] = 'Y';   
-    console.log(
-        [ // Check placing X in 0x0 from initial state.
-        isMoveOk({turnIndexBeforeMove: 0, stateBeforeMove: {}, 
-          move: [{setTurn: {turnIndex : 1}},
-        {set: {key: 'board', value: board}},
-        {set: {key: 'delta', value: {row: 0, col: 0, delDirRow:0, delDirCol:0, delDis:0}}}]}),
-        // Check placing O in 0x1 from previous state.   
-        isMoveOk({turnIndexBeforeMove: 1, 
-          stateBeforeMove: {board: board, delta: {row: 0, col: 0, delDirRow:0, delDirCol:0, delDis:0}}, 
-        move: [{setTurn: {turnIndex : 0}},
-        {set: {key: 'board', value: board2}},
-        {set: {key: 'delta', value: {row: 0, col: 1, delDirRow:0, delDirCol:0, delDis:0}}}]}),
-        // Checking an illegal move.
-        isMoveOk({turnIndexBeforeMove: 0, stateBeforeMove: {}, move: [{setTurn: {turnIndex : 0}}]})
-        ]);
   /**
   * Returns the move that the computer player should do for the given board.
   * The computer will play in a random empty cell in the board.
   */
-  this.createComputerMove = function(board, turnIndexBeforeMove) {
-      var possibleMoves = [];
-      var i, j;
-      for (i = 0; i < 11; i++) {
-        for (j = horIndex[i][0]; j < horIndex[i][1]; j++) {
+  export function createComputerMove(board: Board, turnIndexBeforeMove: number): IMove {
+      var possibleMoves: IMove[] = [];
+      for (var i = 0; i < 11; i++) {
+        for (var j = horIndex[i][0]; j < horIndex[i][1]; j++) {
           try {
             possibleMoves.push(createMove(board, i, j,0, 0,0, turnIndexBeforeMove));
           } catch (e) {
@@ -358,12 +364,4 @@ var tilIndex = [[0, 4], [0, 3], [0, 2], [0, 1], [0, 0], [1, 0],
       console.log("random move is: ", randomMove[2].set.value.row, randomMove[2].set.value.col);
       return randomMove;
   }
-    this.isMoveOk=isMoveOk;
-    this.horIndex = horIndex;
-    this.copyObject = copyObject;
-    this.getExampleGame = getExampleGame;
-    this.setBoard = setBoard;
-    this.getRiddles = getRiddles;
-    this.createMove = createMove;
-    this.board = setBoard();
-});
+}

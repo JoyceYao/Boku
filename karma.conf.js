@@ -1,4 +1,6 @@
 module.exports = function(config){
+  'use strict';
+
   config.set({
 
     basePath : './',
@@ -8,7 +10,7 @@ module.exports = function(config){
       'components/angular-route/angular-route.js',
       'components/angular-resource/angular-resource.js',
       'components/angular-mocks/angular-mocks.js',
-      '*.js'
+      'ts_output_readonly_do_NOT_change_manually/src/*.js'
     ],
 
     reporters: ['progress', 'coverage'],
@@ -17,7 +19,8 @@ module.exports = function(config){
       // source files, that you wanna generate coverage for
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
-      'gameLogic.js': ['coverage']
+      //'gameLogic.js': ['coverage']
+      'ts_output_readonly_do_NOT_change_manually/src/gameLogic.js': ['coverage'],
     },
 
     // optionally, configure the reporter
@@ -34,16 +37,9 @@ module.exports = function(config){
 
     plugins : [
             'karma-chrome-launcher',
-            'karma-firefox-launcher',
             'karma-jasmine',
-            'karma-coverage',
-            'karma-junit-reporter'
+            'karma-coverage'
             ],
-
-    junitReporter : {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
-    }
 
   });
 };

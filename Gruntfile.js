@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         // Run karma and watch files using:
         // grunt karma:unit:start watch
         watch: {
-            files: ['game.js','hexagon.js'],
+            files: ['game.js','gameLogic.js','hexagon.js'],
             tasks: ['jshint', 'karma:unit:run']
         },
         concat: {
@@ -56,7 +56,10 @@ module.exports = function(grunt) {
             },
             dist: {
                 // Order is important! gameLogic.js must be first because it defines myApp angular module.
-                src: ['game.js','hexagon.js'],
+                src: [
+                  'ts_output_readonly_do_NOT_change_manually/src/gameLogic.js',
+                  'ts_output_readonly_do_NOT_change_manually/src/game.js',
+                  'ts_output_readonly_do_NOT_change_manually/src/hexagon.js'],
                 dest: 'dist/everything.js',
             },
         },
@@ -88,7 +91,7 @@ module.exports = function(grunt) {
                         'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css',
                         'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/fonts/glyphicons-halflings-regular.woff',
                         'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/fonts/glyphicons-halflings-regular.ttf',
-                        'http://yoav-zibin.github.io/emulator/dist/turnBasedServices.2.min.js',
+                        'http://yoav-zibin.github.io/emulator/dist/turnBasedServices.3.min.js',
                         'http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-touch.min.js',
                         'http://yoav-zibin.github.io/emulator/main.css',
                         'dist/everything.min.js',
@@ -139,8 +142,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['jshint', 'karma',
         'concat', 'uglify',
         'processhtml', 'manifest',
-        'http-server', 'protractor']);
+        'http-server']); //, 'protractor'
 
 };
-
-

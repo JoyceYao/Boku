@@ -2,7 +2,7 @@
   "name": "Boku",
   "version": "1.0.0",
   "description": "Boku game",
-  "main": "game.html",
+  "main": "index.html",
   "dependencies": {
     "http-server": "~0.7.5",
     "jasmine-core": "~2.1.0",
