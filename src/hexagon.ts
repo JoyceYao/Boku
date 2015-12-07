@@ -126,6 +126,7 @@ module hexagon {
     }
 
     drawHexAtColRow(column: number, row: number, color: string): void {
+      //column++; row++;
       var drawy = column % 2 == 0 ? (row * this.height) + this.canvasOriginY : (row * this.height) + this.canvasOriginY + (this.height / 2);
       var drawx = (column * this.side) + this.canvasOriginX;
       this.drawHex(drawx, drawy, color, "");
@@ -162,6 +163,7 @@ module hexagon {
     }
 
     //Recusivly step up to the body to calculate canvas offset.
+    /*
     getRelativeCanvasOffset(): IPoint {
       //return {x:this.canvas.getBoundingClientRect().left, y:this.canvas.getBoundingClientRect().top};
       var x = 0, y = 0;
@@ -174,13 +176,15 @@ module hexagon {
       this.offSetX = x;
       this.offSetY = y;
       return { x: x, y: y };
-    }
+    }*/
 
       //Uses a grid overlay algorithm to determine hexagon location
       //Left edge of grid has a test to acuratly determin correct hex
+      /*
     getSelectedTile(mouseX: number, mouseY: number): IPosition {
       var offSet = this.getRelativeCanvasOffset();
       console.log("mouse: ", mouseX, mouseY);
+
 
       mouseX -= offSet.x;
       mouseY -= offSet.y;
@@ -247,7 +251,9 @@ module hexagon {
         }
       }
       return  { row: row, col: column };
-    }
+    }*/
+
+    /*
 
     sign(p1: IPoint, p2: IPoint, p3: IPoint): number {
       return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y);
@@ -262,8 +268,9 @@ module hexagon {
       b3 = this.sign(pt, v3, v1) < 0.0;
 
       return ((b1 == b2) && (b2 == b3));
-    }
+    }*/
 
+    /*
     getIndex(x: number, y: number): void {
       var mouseX = x;
       var mouseY = y;
@@ -285,5 +292,6 @@ module hexagon {
         }
       }
     }
+    */
   }
 }

@@ -15,6 +15,8 @@ module game {
   let hex: any;
   let thisParam: IUpdateUI = null;
   let PlayersNum = 2;
+  let originX = 30;
+  let originY = 30;
 
   //the boundary of horizontal direction
   var horIndex = [[0, 5], [0, 6], [0, 7], [0, 8], [0, 9], [0, 10],
@@ -51,7 +53,7 @@ module game {
       board = gameLogic.setBoard();
     }
 
-    hex.drawHexGrid(horIndex, 30, 30, false, board);
+    hex.drawHexGrid(horIndex, originX, originY, false, board);
     //console.log("board" + JSON.stringify(board));
 
     isYourTurn = params.turnIndexAfterMove >= 0 && // game is ongoing
@@ -80,6 +82,8 @@ module game {
   }
 
   function handleDragEvent(type: string, clientX: number, clientY: number) {
+    // replace all cilentX as shiftX, clientY as shiftY
+
     if (gameLogic.getWinner(board) !== '') return;
     var row = getRowCol(clientX, clientY).x;
     var col = getRowCol(clientX, clientY).y;
@@ -96,7 +100,9 @@ module game {
 
     if (w > h) {
       x = x - (w / 2 - h / 2);
-    } else { y = y - (h / 2 - w / 2); }
+    } else {
+      y = y - (h / 2 - w / 2);
+    }
 
     console.log("handleDragEvent[1] w=" + w);
     console.log("handleDragEvent[1] h=" + h);
@@ -117,10 +123,10 @@ module game {
       var current = turnIndex  === 0 ? 'R' : 'Y';
       if (board[row][col] === '') {
         board[row][col] = current;
-        hex.drawHexGrid(horIndex, 30, 30, false, board);
+        hex.drawHexGrid(horIndex, originX, originY, false, board);
         board[oldrow][oldcol] = '';
       } else {
-        hex.drawHexGrid(horIndex, 30, 30, false, board);
+        hex.drawHexGrid(horIndex, originX, originY, false, board);
       }
 
     } else if (type == "touchend"){
