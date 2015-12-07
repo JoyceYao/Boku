@@ -95,7 +95,8 @@ var hexagon;
                 color = "#FFFFFF";
             }
             //console.log(color);
-            this.drawHex(x, y, color, "false");
+            // change debugText from "false" into ""
+            this.drawHex(x, y, color, "");
             //requestAnimFrame(function() {
             //  animateMove(x,y,startTime,turn);
             //});
