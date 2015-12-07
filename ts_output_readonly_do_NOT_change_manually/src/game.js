@@ -1,7 +1,5 @@
 var game;
 (function (game) {
-    var animationEnded = false;
-    var isComputerTurn = false;
     var gameOver = false;
     var board = null;
     var delta = null;
@@ -40,24 +38,10 @@ var game;
         draggingLines = document.getElementById("draggingLines");
         horizontalDraggingLine = document.getElementById("horizontalDraggingLine");
         verticalDraggingLine = document.getElementById("verticalDraggingLine");
-        // See http://www.sitepoint.com/css3-animation-javascript-event-handlers/
-        document.addEventListener("animationend", animationEndedCallback, false); // standard
-        document.addEventListener("webkitAnimationEnd", animationEndedCallback, false); // WebKit
-        document.addEventListener("oanimationend", animationEndedCallback, false); // Opera
     }
     game.init = init;
-    function animationEndedCallback() {
-        $rootScope.$apply(function () {
-            log.info("Animation ended");
-            animationEnded = true;
-            if (isComputerTurn) {
-                sendComputerMove();
-            }
-        });
-    }
     function updateUI(params) {
         console.log("updateUI params=" + JSON.stringify(params));
-        animationEnded = false;
         thisParam = params;
         board = params.stateAfterMove['board'];
         delta = params.stateAfterMove['delta'];
@@ -68,18 +52,12 @@ var game;
         //console.log("board" + JSON.stringify(board));
         isYourTurn = params.turnIndexAfterMove >= 0 &&
             params.yourPlayerIndex === params.turnIndexAfterMove; // it's my turn
-        console.log("updateUI yourPlayerIndex=" + params.yourPlayerIndex);
-        console.log("updateUI turnIndexAfterMove=" + params.turnIndexAfterMove);
         turnIndex = params.turnIndexAfterMove;
-        isComputerTurn = isYourTurn &&
-            params.playersInfo[params.yourPlayerIndex].playerId === '';
         // Is it the computer's turn?
         hex.turn = params.yourPlayerIndex;
-        console.log("updateUI playersInfo=" + JSON.stringify(params.playersInfo));
-        if (isComputerTurn) {
-            if (!delta) {
-                sendComputerMove();
-            }
+        if (isYourTurn && params.playersInfo[params.yourPlayerIndex].playerId === '') {
+            // Wait 500 milliseconds until animation ends.
+            $timeout(sendComputerMove, 500);
         }
     }
     function sendMakeMove(move) {
@@ -95,6 +73,11 @@ var game;
     }
     function handleDragEvent(type, clientX, clientY) {
         // replace all cilentX as shiftX, clientY as shiftY
+        console.log("handleDragEvent[0] isYourTurn=" + isYourTurn);
+        if (!isYourTurn) {
+            return;
+        }
+        console.log("handleDragEvent[1] isYourTurn=" + isYourTurn);
         if (gameLogic.getWinner(board) !== '')
             return;
         var row = getRowCol(clientX, clientY).x;
@@ -206,7 +189,7 @@ var game;
     }
     function tryMakeMove(row, col) {
         try {
-            console.log("tryMakeMove[0] turnIndex=" + turnIndex);
+            console.log("tryMakeMove[0] turnIndex=" + JSON.stringify(move));
             var move = gameLogic.createMove(board, row, col, 0, 0, 0, turnIndex);
             isYourTurn = false;
             console.log("tryMakeMove move=" + JSON.stringify(move));
