@@ -1,4 +1,6 @@
 module game {
+  let animationEnded = false;
+  let isComputerTurn = false;
   let gameOver = false;
   let board: Board = null;
   let delta: BoardDelta = null;
@@ -42,10 +44,26 @@ module game {
     draggingLines = document.getElementById("draggingLines");
     horizontalDraggingLine = document.getElementById("horizontalDraggingLine");
     verticalDraggingLine = document.getElementById("verticalDraggingLine");
+
+    // See http://www.sitepoint.com/css3-animation-javascript-event-handlers/
+    document.addEventListener("animationend", animationEndedCallback, false); // standard
+    document.addEventListener("webkitAnimationEnd", animationEndedCallback, false); // WebKit
+    document.addEventListener("oanimationend", animationEndedCallback, false); // Opera
+  }
+
+  function animationEndedCallback() {
+    $rootScope.$apply(function () {
+    log.info("Animation ended");
+    animationEnded = true;
+    if (isComputerTurn) {
+      sendComputerMove();
+    }
+    });
   }
 
   function updateUI(params: IUpdateUI): void {
-    //console.log("updateUI params=" + JSON.stringify(params));
+    console.log("updateUI params=" + JSON.stringify(params));
+    animationEnded = false;
     thisParam = params;
     board = params.stateAfterMove['board'];
     delta = params.stateAfterMove['delta'];
@@ -58,13 +76,20 @@ module game {
 
     isYourTurn = params.turnIndexAfterMove >= 0 && // game is ongoing
         params.yourPlayerIndex === params.turnIndexAfterMove; // it's my turn
+    console.log("updateUI yourPlayerIndex=" + params.yourPlayerIndex);
+    console.log("updateUI turnIndexAfterMove=" + params.turnIndexAfterMove);
     turnIndex = params.turnIndexAfterMove;
+
+    isComputerTurn = isYourTurn &&
+        params.playersInfo[params.yourPlayerIndex].playerId === '';
 
     // Is it the computer's turn?
     hex.turn = params.yourPlayerIndex;
-    if (isYourTurn && params.playersInfo[params.yourPlayerIndex].playerId === '') {
-        // Wait 500 milliseconds until animation ends.
-        $timeout(sendComputerMove, 500);
+    console.log("updateUI playersInfo=" + JSON.stringify(params.playersInfo));
+    if (isComputerTurn) {
+      if (!delta) {
+        sendComputerMove();
+      }
     }
   }
 
@@ -74,6 +99,7 @@ module game {
   }
 
   function sendComputerMove(): void {
+    console.log(["sendComputerMove:!"]);
     var move = gameLogic.createComputerMove(board, turnIndex);
     gameService.makeMove(move);
 
@@ -199,9 +225,10 @@ module game {
 
   function tryMakeMove(row: number, col: number){
     try {
+      console.log("tryMakeMove[0] turnIndex=" + turnIndex);
       var move = gameLogic.createMove(board, row, col, 0, 0, 0, turnIndex);
       isYourTurn = false;
-      console.log(JSON.stringify(move));
+      console.log("tryMakeMove move=" + JSON.stringify(move));
       sendMakeMove(move);
     } catch (e) {
       log.info(["Invalid move:", row, col, e.message]);
