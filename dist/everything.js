@@ -333,6 +333,8 @@ var gameLogic;
     var hex;
     var thisParam = null;
     var PlayersNum = 2;
+    var originX = 30;
+    var originY = 30;
     //the boundary of horizontal direction
     var horIndex = [[0, 5], [0, 6], [0, 7], [0, 8], [0, 9], [0, 10],
         [1, 10], [2, 10], [3, 10], [4, 10], [5, 10]];
@@ -363,7 +365,7 @@ var gameLogic;
         if (board === undefined) {
             board = gameLogic.setBoard();
         }
-        hex.drawHexGrid(horIndex, 30, 30, false, board);
+        hex.drawHexGrid(horIndex, originX, originY, false, board);
         //console.log("board" + JSON.stringify(board));
         isYourTurn = params.turnIndexAfterMove >= 0 &&
             params.yourPlayerIndex === params.turnIndexAfterMove; // it's my turn
@@ -386,6 +388,7 @@ var gameLogic;
         hex.row = Math.round((-4 + hex.column + 2 * move[2].set.value.row) / 2);
     }
     function handleDragEvent(type, clientX, clientY) {
+        // replace all cilentX as shiftX, clientY as shiftY
         if (gameLogic.getWinner(board) !== '')
             return;
         var row = getRowCol(clientX, clientY).x;
@@ -423,11 +426,11 @@ var gameLogic;
             var current = turnIndex === 0 ? 'R' : 'Y';
             if (board[row][col] === '') {
                 board[row][col] = current;
-                hex.drawHexGrid(horIndex, 30, 30, false, board);
+                hex.drawHexGrid(horIndex, originX, originY, false, board);
                 board[oldrow][oldcol] = '';
             }
             else {
-                hex.drawHexGrid(horIndex, 30, 30, false, board);
+                hex.drawHexGrid(horIndex, originX, originY, false, board);
             }
         }
         else if (type == "touchend") {
@@ -601,7 +604,7 @@ angular.module('myApp', ['ngTouch', 'ui.bootstrap', 'gameServices'])
             //})
         };
         IHex.prototype.animateMove = function (x, y, startTime, turn) {
-            console.log("animateMove!!");
+            //console.log("animateMove!!");
             var time = (new Date()).getTime();
             var timeDiff = time - startTime;
             if (timeDiff > 500)
@@ -617,12 +620,14 @@ angular.module('myApp', ['ngTouch', 'ui.bootstrap', 'gameServices'])
                 color = "#FFFFFF";
             }
             //console.log(color);
-            this.drawHex(x, y, color, "false");
+            // change debugText from "false" into ""
+            this.drawHex(x, y, color, "");
             //requestAnimFrame(function() {
             //  animateMove(x,y,startTime,turn);
             //});
         };
         IHex.prototype.drawHexAtColRow = function (column, row, color) {
+            //column++; row++;
             var drawy = column % 2 == 0 ? (row * this.height) + this.canvasOriginY : (row * this.height) + this.canvasOriginY + (this.height / 2);
             var drawx = (column * this.side) + this.canvasOriginX;
             this.drawHex(drawx, drawy, color, "");
@@ -650,110 +655,6 @@ angular.module('myApp', ['ngTouch', 'ui.bootstrap', 'gameServices'])
                 this.context.font = "8px";
                 this.context.fillStyle = "#000";
                 this.context.fillText(debugText, x0 + (this.width / 2) - (this.width / 4), y0 + (this.height - 5));
-            }
-        };
-        //Recusivly step up to the body to calculate canvas offset.
-        IHex.prototype.getRelativeCanvasOffset = function () {
-            //return {x:this.canvas.getBoundingClientRect().left, y:this.canvas.getBoundingClientRect().top};
-            var x = 0, y = 0;
-            var layoutElement = this.canvas;
-            while (layoutElement.offsetParent) {
-                x += layoutElement.offsetLeft;
-                y += layoutElement.offsetTop;
-                layoutElement = layoutElement.offsetParent;
-            }
-            this.offSetX = x;
-            this.offSetY = y;
-            return { x: x, y: y };
-        };
-        //Uses a grid overlay algorithm to determine hexagon location
-        //Left edge of grid has a test to acuratly determin correct hex
-        IHex.prototype.getSelectedTile = function (mouseX, mouseY) {
-            var offSet = this.getRelativeCanvasOffset();
-            console.log("mouse: ", mouseX, mouseY);
-            mouseX -= offSet.x;
-            mouseY -= offSet.y;
-            mouseX /= this.scale;
-            mouseY /= this.scale;
-            mouseX -= this.tx;
-            mouseY -= this.ty;
-            mouseX -= this.canvasOriginX;
-            mouseY -= this.canvasOriginY;
-            var column = Math.floor((mouseX) / this.side);
-            var row = Math.floor(column % 2 == 0
-                ? Math.floor((mouseY) / this.height)
-                : Math.floor(((mouseY + (this.height * 0.5)) / this.height)) - 1);
-            //Test if on left side of frame
-            if (mouseX > (column * this.side) && mouseX < (column * this.side) + this.width - this.side) {
-                //Now test which of the two triangles we are in
-                //Top left triangle points
-                var p1;
-                p1.x = column * this.side;
-                p1.y = column % 2 == 0
-                    ? row * this.height
-                    : (row * this.height) + (this.height / 2);
-                var p2;
-                p2.x = p1.x;
-                p2.y = p1.y + (this.height / 2);
-                var p3;
-                p3.x = p1.x + this.width - this.side;
-                p3.y = p1.y;
-                var mousePoint;
-                mousePoint.x = mouseX;
-                mousePoint.y = mouseY;
-                if (this.isPointInTriangle(mousePoint, p1, p2, p3)) {
-                    column--;
-                    if (column % 2 != 0) {
-                        row--;
-                    }
-                }
-                //Bottom left triangle points
-                var p4;
-                p4 = p2;
-                var p5;
-                p5.x = p4.x;
-                p5.y = p4.y + (this.height / 2);
-                var p6;
-                p6.x = p5.x + (this.width - this.side);
-                p6.y = p5.y;
-                if (this.isPointInTriangle(mousePoint, p4, p5, p6)) {
-                    column--;
-                    if (column % 2 == 0) {
-                        row++;
-                    }
-                }
-            }
-            return { row: row, col: column };
-        };
-        IHex.prototype.sign = function (p1, p2, p3) {
-            return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y);
-        };
-        //TODO: Replace with optimized barycentric coordinate method
-        IHex.prototype.isPointInTriangle = function (pt, v1, v2, v3) {
-            var b1, b2, b3;
-            b1 = this.sign(pt, v1, v2) < 0.0;
-            b2 = this.sign(pt, v2, v3) < 0.0;
-            b3 = this.sign(pt, v3, v1) < 0.0;
-            return ((b1 == b2) && (b2 == b3));
-        };
-        IHex.prototype.getIndex = function (x, y) {
-            var mouseX = x;
-            var mouseY = y;
-            var tile = this.getSelectedTile(mouseX, mouseY);
-            this.column = tile.col;
-            this.row = tile.row;
-        };
-        IHex.prototype.updateUI = function () {
-            if (this.column >= 0 && this.row >= 0) {
-                var drawy = this.column % 2 == 0 ? (this.row * this.height)
-                    + this.canvasOriginY + 6 : (this.row * this.height) + this.canvasOriginY + 6 + (this.height / 2);
-                var drawx = (this.column * this.side) + this.canvasOriginX;
-                if (this.turn === 1) {
-                    this.drawHex(drawx, drawy - 6, "rgba(255,0,0,0.4)", "");
-                }
-                else {
-                    this.drawHex(drawx, drawy - 6, "rgba(255,255,0,0.4)", "");
-                }
             }
         };
         return IHex;
