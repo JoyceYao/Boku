@@ -79,7 +79,7 @@ var hexagon;
             //})
         };
         IHex.prototype.animateMove = function (x, y, startTime, turn) {
-            console.log("animateMove!!");
+            //console.log("animateMove!!");
             var time = (new Date()).getTime();
             var timeDiff = time - startTime;
             if (timeDiff > 500)

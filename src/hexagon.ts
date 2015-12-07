@@ -104,7 +104,7 @@ module hexagon {
     }
 
     animateMove(x: number, y: number, startTime: number, turn: string): void {
-      console.log("animateMove!!");
+      //console.log("animateMove!!");
       var time = (new Date()).getTime();
       var timeDiff = time - startTime;
       if (timeDiff > 500) return;
