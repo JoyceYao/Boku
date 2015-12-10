@@ -358,7 +358,7 @@ var gameLogic;
     }
     game.init = init;
     function updateUI(params) {
-        //console.log("updateUI params=" + JSON.stringify(params));
+        console.log("updateUI params=" + JSON.stringify(params));
         thisParam = params;
         board = params.stateAfterMove['board'];
         delta = params.stateAfterMove['delta'];
@@ -382,6 +382,7 @@ var gameLogic;
         gameService.makeMove(move);
     }
     function sendComputerMove() {
+        console.log(["sendComputerMove:!"]);
         var move = gameLogic.createComputerMove(board, turnIndex);
         gameService.makeMove(move);
         hex.column = move[2].set.value.col - move[2].set.value.row + 5;
@@ -389,6 +390,11 @@ var gameLogic;
     }
     function handleDragEvent(type, clientX, clientY) {
         // replace all cilentX as shiftX, clientY as shiftY
+        console.log("handleDragEvent[0] isYourTurn=" + isYourTurn);
+        if (!isYourTurn) {
+            return;
+        }
+        console.log("handleDragEvent[1] isYourTurn=" + isYourTurn);
         if (gameLogic.getWinner(board) !== '')
             return;
         var row = getRowCol(clientX, clientY).x;
@@ -500,9 +506,10 @@ var gameLogic;
     }
     function tryMakeMove(row, col) {
         try {
+            console.log("tryMakeMove[0] turnIndex=" + JSON.stringify(move));
             var move = gameLogic.createMove(board, row, col, 0, 0, 0, turnIndex);
             isYourTurn = false;
-            console.log(JSON.stringify(move));
+            console.log("tryMakeMove move=" + JSON.stringify(move));
             sendMakeMove(move);
         }
         catch (e) {
