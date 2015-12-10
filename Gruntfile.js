@@ -163,7 +163,7 @@ module.exports = function(grunt) {
                         'http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-touch.min.js',
                         'http://yoav-zibin.github.io/emulator/main.css',
                         'dist/everything.min.js',
-                        'game.css',
+                        'css/game.css',
                         'imgs/HelpSlide.png'
                     ],
                     network: ['languages/en.js',
