@@ -144,7 +144,7 @@ module.exports = function(grunt) {
         processhtml: {
             dist: {
                 files: {
-                    'game.min.html': ['game.html']
+                    'index.min.html': ['index.html']
                 }
             }
         },
